@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+<style> *{ font-size: 20pt;} </style>
+<script>
+    //test07.html
+    var key=1234;   //전역변수=필드=field
+    var Gtotal = 0; //멤버변수=전역변수=필드=field
+    var flag = false ;
+
+    function aaa(userid){ 
+        alert("이름은 " + userid );
+    }//end
+
+    function bbb(kor, eng){ 
+        alert('첫번째 값 ' + kor + '  두번째 값 ' + eng );
+    }//end
+
+    function ccc(name, mat, com){  
+        alert( '이름 ' + name + '  수학 ' + mat + '  컴퓨터 ' + com );
+    }//end
+</script>
+</head>
+<body>
+    <h2> test07.html </h2>
+    <button onclick="aaa('미디어')"> aaa함수호출 미디어 </button>
+    <button onclick="bbb(3, 4)"> bbb함수호출 3  4  </button>
+    <button onclick="ccc('길동', 90, 85)"> ccc함수호출 길동 90 85  </button>
+    <div id="display"></div>
+</body>
+</html>
+
+
+

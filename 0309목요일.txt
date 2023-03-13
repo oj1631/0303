@@ -1,0 +1,1305 @@
+영임쌤 컴퓨터  
+ ip주소 192.168.0.157
+ \\192.168.0.157
+
+#--------------------------------------------------------------
+https://www.w3schools.com/
+https://skitter-slider.net/
+ 
+Mtest
+ㄴworkhtml
+  ㄴday0309
+    ㄴ06puzzle.html문서
+    ㄴ07test.html문서
+
+매개인자O, 리턴값O
+
+어떤경우에 매개인자 있어야 되는지 ~~~ 359페이지 자바스크립트교재
+어떤경우에 리턴값 있어야 되는지  ~~~ 357~358페이지  return는 처리결과를 반환=되돌려
+  ㄴ영임쌤입장 - 첫번째는 지역변수데이터를 다른곳에전달, 함수이름이 지역변수값 기억
+  ㄴ영임쌤입장 - 두번째는 처리값을 변수가 받아서 재활용(if,for사용)
+
+  ㄴreturn키워드 중간에 단독으로 기술하면 탈출 exit
+  ㄴreturn키워드 마지막에 기술 95%하면 return 값 
+   함수이름이 마지막 리턴값을 기억=반환  
+     return "서울구로" ;
+     return 78 ;
+     return 32.91 ;
+     return 'B' ;
+     return true ;
+
+  var jumin="871029-2435916" ;
+  var gender = jumin.charAt(7) ;
+  if(jumin.charAt(7)=='1') { 남자출력 }
+  else if(jumin.charAt(7)=='2') { 여자출력 }
+
+  10월29일생일이네요.   
+  jumin.substring(2,4);  
+  jumin.substring(4,6);  
+
+  document.write(jumin.substring(2,4));
+  document.write(jumin.substring(4,6));
+
+  var m=jumin.substring(2,4);  
+  var d=jumin.substring(4,6);  
+
+  document.write(m);
+  document.write(d);
+
+어떤경우에 매개인자,리턴값 다 있어야 되는지 ~~~
+어떤경우에 매개인자X,리턴값X 있어야 되는지 ~~~
+
+function 함수이름( [매개인자] ){  ~~ return } 
+
+ 
+ 배열,함수 - 모든언어로 개발이 가능
+ SQL - 개발이 가능 + 데이터저장 
+
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+==========================================================================
+
+
+
+    function aaa(x, y){ //메소드=method=함수=펑션=프로시저=procedure=def=정의=구현
+        //alert('aaa함수펑션입니다');
+        alert("이름은 " + x + " 점수는 " + y);
+    }//end
+
+
+
+
+부트스트랩, jQuery
+html + css + javascript 
+
+프로젝트기간
+3월3일 금요일 ~ 3월13일 월요일
+
+
+*--------------------------------------------------------
+*--------------------------------------------------------
+속성=attribute   <img src=필수항목  alt='' width='' >
+jQuery에서 attr()메소드
+
+값value
+jQuery에서 val()메소드
+
+
+
+
+	a:97	A:65   0:48   1:49  2:50
+	ESC:27  enter:13
+
+$('#uid').keyup(function(e){ 
+   var data = $('#uid').val();
+   if(e.keyCode==13){
+   }
+});
+
+첫번째 사칙연산처리 결과출력 alert();금지
+두번째 웹에서숫자입력하면 문자로인식합니다
+      형변환함수 이용
+세번째 웹에서 숫자입력하면 문자이지만
+      숫자처럼 오른쪽정렬
+
+네번째 입력란공백일때 alert('공백입니다');
+      <span></span>
+
+5번째 자바스크립트 함수이름명명 본인맘대로 
+
+
+
+
+
+
+========================================================
+2월24일 금요일
+ ㄴ2장 스타일 마무리
+ ㄴ4장 jQuery시작 https://jquery.com/
+
+jQuery란?
+ 자바스크립트 라이브러리이다.
+ 존 레식 2006년 뉴욕시 바캠프(Barcamp NYC)에서 공식으로 소개
+ $('#id접근'){ }
+ $('.class접근'){ }
+
+<script>
+ $(function(){
+    $('#btn').click(function(){ 
+        var c = $('#numc').val();
+        alert('jQuery이벤트 '+ c);
+    }); 
+
+   $('#btn').on('click',function(){ 코드기술 } );
+ });
+
+  function mycal(x,y){ var hap = x+y; hap출력 }
+</script>
+<html>
+  <button id="btn"> 더하기계산 </button>
+  <button onclick="mycal(7,2);"> 더하기계산 </button>
+</html>
+
+새로  jQuery시작
+$(document).ready( function(){ 코드기술 }  );
+jQuery(document).ready(function () {  }  );
+
+
+$(document).ready( function(){ 
+  $('#btn2').click(function(){
+    var b=('#numb').val();
+    alert(b);
+  });
+
+});
+
+
+
+https://jquery.com
+ ㄴ오렌지ui클릭 Widgets위젯=컴포넌트=컨트롤=대상
+    ㄴDatepicker선택해서 viewSource=03jquery.html
+
+https://jqueryui.com
+ ㄴ오렌지ui클릭 Widgets위젯=컴포넌트=컨트롤=대상
+ ㄴTooltip  $( document ).tooltip({ 코드 });
+ ㄴTabs     $( "#tabs" ).tabs();
+ ㄴSpinner  $( "#getvalue" ).on( "click", function() { alert('메' ); });
+ ㄴSlider   $( "#slider" ).slider();
+ ㄴSelectmenu    $( "#speed" ).selectmenu();
+ ㄴProgressbar   $( "#progressbar" ).progressbar({ value: 37 });
+ ㄴMenu          $( "#menu" ).menu();
+ ㄴDialog        $( "#dialog-form" ).dialog({autoOpen: false, height:400});
+ ㄴDatepicker    03jQuery.html문서에 있습니다 
+ ㄴControlgroup     $( ".controlgroup-vertical" ).controlgroup({ 코드기술 });
+ ㄴCheckboxradio    $( "input" ).checkboxradio();
+ ㄴButton           $( "button, input, a" ).on( "click", function( event ){ 코드});
+ ㄴAutocomplete     $( "#tags" ).autocomplete({ 코드 });
+ ㄴAccordion        $( "#accordion" ).accordion();   
+
+이벤트  클릭click(), focus(), blur()
+      마우스 mouseover(), mouseout() ===>addClass(스타일)  04jQuerymouse.html
+      키보드이벤트 keyup() keydown() keypress()
+
+05addClass477.html
+06removeClass479.html
+07toggleClass481.html
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+11jQuerykey.html
+12jQuerykey.html
+
+
+js언어에서 제어문 if/switch
+ var su=7;
+ if(su == 10){ 조건만족시처리 }
+ else{불만족시처리 }
+
+
+모든언어에서  변수/상수 =  값 ;
+
+모든언어에서  함수이름()
+ alert( )
+ Math.random()
+ mycal()
+ jumin.charAt(7)
+
+<html>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+
+<script>
+   $(document).ready(function(){
+      코드시작
+   });
+<script>
+</html>
+
+속성=property=attribute
+<img src='' width=200 border=1 height=200  alt=''>
+
+
+447페이지
+ $('p')
+ $('#display')
+ 스타일  *{ }  p#display{ }
+ 자바스크립트 document.getElementById('display').innerHTML=값;
+
+ <p id=display>
+
+ <div id='gnb'> <ul> <li> </li> </ul> </div>
+
+
+2월23일 목요일
+372페이지 
+ var lotto = [ 24, 7, 12, 45, 39, 6 ] ;
+ var person = { name:'kim', age:27 }
+
+ EcmaScript = ES6
+(European Computer Manufactures Association)
+
+
+function 함수(){ }    매개인자X,리턴값X
+function 함수(7){ }   매개인자가 있는경우
+function 함수(){ return "몽블랑"; } 리턴값이 있는경우
+
+function aaa(){
+ 처리1~ 계산처리 ~;
+ 처리2~~ 배열처리 ;
+ return  ;
+ 처리7~~ 로그인체크;
+ 처리8~~ 비번처리;
+} 
+
+function bbb(){
+ 처리1~ 계산처리 ~;
+ 처리2~~ 배열처리 ;
+ return "선유도" ;
+} 
+
+
+414페이지 BOM돔모델 browser object model = 최상위모델 window
+ window
+  ㄴ다양한함수 
+   open(), setInterval(처리,5000),
+   setTimeout(처리,3000), clearTimeout()
+   
+  ㄴlocation문서이동
+  ㄴscreen화면크기
+  ㄴhistory
+  ㄴnavigatior
+  ㄴdocument
+
+
+
+
+08testrandom.html
+09testrandom.html
+10testgame.html -  가위바위보게임
+11testfunction.html
+
+
+변수,상수,배열
+연산(사칙,비트,논리,삼항,단항)
+함수 function 함수(){ } function 함수(7){ }
+함수 function 함수(){ return 키워드 }
+문자열함수, Math수학함수 
+
+387페이지 배열=array
+ 변수variable=변하는값  
+   var kor=90; 
+   let eng=85;
+
+ 상수const=한번대입후 재할당 안됨=고정 
+  const PI=3.1415; const NT='대한민국'; 
+
+ 배열=array/ for반복문으로 출력
+  day = ['일', '월' , '화', '수', '목', '금', '토' ] ;
+   //for( var k=0; k<day.length; k++){document.write(day[k]); }
+  document.write(day[2]);
+   
+  배열명 = new Array('일', '월' , '화', '수', '목', '금', '토' ) ;
+  배열예제 로또 숫자 6개
+  var lotto= [ 34, 7, 12, 45, 29, 6 ] ; 
+
+	변수,상수,배열
+	연산(사칙,비트,논리,삼항,단항)
+	함수 function 함수(){ } function 함수(7){ } 
+	문자열함수, Math수학함수 
+
+	클래스 상품되기전=메모리로드전
+	객체  상품화=메모리로드
+	var dt = new Date();
+	
+	food="햄버거";
+	getFood() 게터값가져오기
+	setFood(값변경)세터 값변경
+	미르.setFood("곱창");
+
+	414페이지 DOM돔모델 document object model
+	414페이지 BOM돔모델 browser object model = 최상위모델 window
+	421페이지 DOM돔모델 document object model
+
+	변수,상수,배열
+	연산(사칙,비트,논리,삼항,단항)
+	함수 function 함수(){ } function 함수(7){ }
+	함수 function 함수(){return 키워드 }
+	문자열함수, Math수학함수 
+
+
+C:\Mtest\workhtml\agency
+1번째 깃저장소repository생성
+2번째 snow/summer/spring명명 
+https://github.com/posasi2000/spring.git
+
+시작 cmd
+C:~~~> cd\
+C:\> cd Mtest
+C:\Mtest> cd workhtml
+C:\Mtest\workhtml>
+C:\Mtest\workhtml> cd agency
+C:\Mtest\workhtml\agency>
+C:\Mtest\workhtml\agency> git init
+C:\Mtest\workhtml\agency> git add  *.* 
+C:\Mtest\workhtml\agency> git commit -m "2-21-화요일 test111"
+
+C:\Mtest\workhtml\agency> git remote 엔터치면 아무런표시없음 
+C:\Mtest\workhtml\agency> git remote add origin https://github.com/posasi2000/spring.git
+
+C:\Mtest\workhtml\agency> git remote 
+C:\Mtest\workhtml\agency> git branch
+C:\Mtest\workhtml\agency> git push  origin  master
+C:\Mtest\workhtml\agency> git status 
+
+
+두번째 추가내용올릴때
+C:\Mtest\workhtml\agency> git add  *.* 
+C:\Mtest\workhtml\agency> git commit -m "2-21-화요일 test222"
+C:\Mtest\workhtml\agency> git remote add origin  https://github.com/posasi2000/spring.git
+C:\Mtest\workhtml\agency> git push  origin  master
+
+
+2월22일 수요일 교재 387페이지 배열부터 다시 실습 
+
+	숫자%4  나머지구함  0 1 2 3
+ 
+	0%4===> 
+
+	1%4===>  1 
+	2%4===>  2
+	3%4===>  3
+	4%4===>  0
+
+	5%4===>  1
+	6%4===>  2
+	7%4===>  3
+	8%4===>  0
+
+
+
+이벤트처리=함수구현기술=함수호출
+호출하는 대상
+ ㄴ<button onclick="함수이름()">
+ ㄴ<input type=button onclick="함수이름()">
+ ㄴ<input type=submit onclick="함수이름()">
+ ㄴ<img onclick="함수이름()" >
+ ㄴ<body onload="welcome('라일락')" >
+ ㄴ<select  onclick="changePizzaR(value)">
+ ㄴ<input type=text onkeyup="함수이름()">
+함수=기능=처리=일꾼=구현=function=procedure프로시저
+자바스크립트에서 함수 function 함수이름(매개){ }
+모든컴퓨터언어에서 함수
+ ㄴ내장함수 - 수학,문자,날짜
+ ㄴ사용자정의 함수  
+   function welcome(userid){ }
+
+   var gname=''; 전역변수
+   function mynumber(){ var info='';지역변수 }
+
+   var my = function(){ 익명함수 }
+ 3X3=삼목게임  4X4=퍼즐  5X5=오목게임 
+var name=[ '고길동', '둘리', 2400, 'F', 3.1415] ;
+var name=new Array( '고길동', '둘리', 2400, 'F', 3.1415) ;
+var a = '고길동' ;
+var b = '둘리' ;
+var c = '제갈량';
+var d = '조조' ;
+var e = '영우' ;
+document.write(e);
+document.write(name[4]);
+
+함수값(매개인자)
+ function changePizzaR(name=제육볶음){ }
+ onchange="changePizzaR(value=제육볶음)"
+ bbb김치(가격) 선택하면 넘어가는값 제육볶음
+ 
+ function welcome(userid){ }
+ <body onload="welcome('길동')"
+  var name='길동'; 변수
+  var age=27;  변수
+  const PI=3.12415;
+  function fruits() { var age=31; }
+
+372페이지 객체=오브젝트=object=개체=컴포넌트=component
+  var person ={ name:'홍길동', age:27; }
+  내장객체종류 Number,String,Array배열,Math,Date,RegExp
+
+375페이지 생성자함수 new키워드 
+375페이지 this키워드 
+384페이지 문자열 시작번호 0번째 
+	var jumin="890730-2065913";  앞-뒤 연산처리
+	첫번째 나이,생년월일
+	두번째 성별추출,지역
+	var gender = jumin.charAt(7);
+	if(gender=='1' || gender=='3'){ 남자출력 }
+	else if(gender=='2' || gender=='4'){ 여자출력 }
+	else { document.write('성별기입이 틀렸습니다');}
+
+
+
+
+
+
+
+10teststar.html문서
+★ 
+★ ★ 
+★ ★ ★ 
+★ ★ ★ ★ 
+★ ★ ★ ★ ★ 
+
+상대 가로427,높이180
+    b-p:left
+
+절대 가로213,높이180
+     right:0
+     b-p:right
+
+
+function  myhap( a매개인자, b매개인자 ){
+  var total = 0 ;
+  total = a + b ;
+}//end
+
+<button onclick="myhap(5,7);"> 더하기 </button>
+
+function mydan(dan){
+   for(i=1; i<10; i=i+1){
+      document.write(dan, '*', i , '=', (i*dan), '<br>');
+    }
+}
+
+<button onclick="mydan(7);"> 구구단 </button>
+
+
+
+
+a=0일때
+    b=0부터  0<0 조건불만족  25라인*출력안함
+a=1일때
+    b=0처리  0<1 조건만족    25라인*출력
+    b=1처리  1<1 조건불만족  25라인*출력안함 
+a=2일때
+    b=0처리 0<2 조건만족    25라인*출력
+    b=1처리 1<2 조건만족    25라인*출력
+    b=2처리 2<2 조건불만족  25라인*출력안함
+
+a=3일때  
+    b=0처리 0<3 조건만족    25라인*출력
+    b=1처리 1<3 조건만족    25라인*출력
+    b=2처리 2<3 조건만족    25라인*출력
+    b=2처리 3<3 조건불만족  25라인*출력안함
+a=4일때  
+    b=0처리 0<4 조건만족    25라인*출력
+    b=1처리 1<4 조건만족    25라인*출력
+    b=2처리 2<4 조건만족    25라인*출력
+    b=3처리 3<4 조건만족    25라인*출력
+    b=4처리 4<4 조건불만족  25라인*출력안함
+a=5일때  
+    b=0처리 0<5 조건만족    25라인*출력
+    b=1처리 1<5 조건만족    25라인*출력
+    b=2처리 2<5 조건만족    25라인*출력
+    b=3처리 3<5 조건만족    25라인*출력
+    b=4처리 4<5 조건만족    25라인*출력
+    b=5처리 5<5 조건불만족  25라인*출력안함
+
+
+
+
+제어문 - if,switch 
+반복문 - do{최소1회실행}while(조건);, while(조건){ }, for(1;2;3){ }
+switch의 case처리후 탈출 break
+보조제어문 break,continue 단독기술은 의미없음 
+
+ break    반복문탈출,switch탈출
+ continue 반복문다시 복귀 
+
+  for( ;count<10;){
+    1처리
+    2처리 continue보조제어문 
+    3처리
+    4처리	  
+  }
+
+
+
+        논리연산 and &&  or ||
+	산술연산(+ - * /몫 %나머지)
+	비트연산(2진수=0,1)  and &  or |
+	단항연산(증=더하기 감=빼기)  count++
+	대입연산(동일변수사용축소)
+	삼항연산(if~else대신)  
+        339페이지 변수=조건 ? 참 : 거짓 
+
+	   	0010 2 
+		0101 5
+	    &   0000 0   and=양쪽다 1 만족
+	    |   0111 7   or=둘중에 하나만 1 만족
+ 0000 0
+ 0001 1
+ 0010 2
+ 0011 3
+ 0100 4
+ 0101 5
+ 0110 6
+ 0111 7
+
+
+
+
+
+
+	i변수 j변수 피할께요
+	su = su + 1;   count = count + 1;
+	su++ ; 1씩증가  count++;
+	++su ; 1씩증가
+	su-- ; 1씩감소
+	--su ; 1씩감소
+	
+단독일때 a++  ++a   ++b  b++
+a=5   sumA=(a++)+7   12
+
+b=5   sumB=(++b)+7   13
+             6+7
+
+
+
+자바스크립트  1 2 3 4 5  hap=15
+	su=0		hap=0
+
+	su변수		hap변수
+	su=su+1		hap=hap+su
+
+	su=1		hap=1
+	su=su+1		hap=hap+su
+
+	su=2		hap=3
+	su=su+1		hap=hap+su
+	
+	su=3		hap=6
+	su=3+1		hap=6+4
+
+	su=4		hap=10
+	su=4+1		hap=10+5
+	su=5		ha=15
+
+
+단항연산, 대입연산
+while, switch제어문
+
+
+178페이지 스타일 진행  2월16일 목요일 진행
+자바스크립트 
+
+<script>
+    var gtitle = '큰제목' ;  전역변수
+    var gnick = '조장님' ;  전역global
+
+  function  myHap() {
+     var info = '' ;  //info=message=msg=data
+     var kor=0, eng=0, hap=0, avg=0 ; 변수초기화
+     kor변수=90;  값대입=값할당=변수값줌assignment할당
+     eng변수=85;  값대입=값할당=변수값줌assignment할당
+ 
+     hap = kor + eng ;  사칙연산중에서 더하기
+     avg = hap / 2 ;  사칙연산중에서 몫나우기
+
+     //주석 console.log('총합계 =' , hap ) ;              오.버=>검사 console탭 
+     //주석 document.write('총합계 =' , hap , '<br>' ) ;  화면출력
+     info = '총점='+hap+' 평균='+avg ;
+     document.getElementById('display').innerHTML = info;
+   }
+</script>
+
+
+
+<button onClick="javascript:myHap();">함수호출</button>
+<button onClick="myHap()">함수호출</button>
+<button onClick="myhap()">함수이름잘못기술</button>
+
+<div id="display"></div>
+  ㄴvar info = '총점=' + hap ;
+  ㄴdocument.getElementById('display').innerHTML = info  ; 
+  ㄴdocument.getElementById('last').innerHTML = ''  ; 
+
+<div id="last"></div>
+
+제어문 if, switch
+보조제어문 break, continue  ==>단독사용하면 에러발생
+
+반복문 페이지348 for, while 페이지345, do~while
+ for(1초기; 2종료조건; 4증감식 ){
+   k=1 구구단처리출력 
+   k=2 구구단처리출력 
+     ~~~~
+   k=8 구구단처리출력 
+   k=9 구구단처리출력 
+   k=10
+ }
+ 
+su=0
+count=1일때
+ ㄴsu=0+3, ㄴ출력 3출력
+
+count=2일때 
+ ㄴsu=3+3, ㄴ출력 6출력
+
+count=3일때 
+ ㄴsu=6+3, ㄴ출력 9출력
+
+count=4일때 
+ ㄴsu=9+3, ㄴ출력 12출력
+
+count=5일때 
+ ㄴsu=12+3, ㄴ출력 15출력
+
+count=6일때   6<6조건만족않아서 연산출력못함
+
+
+
+
+
+var su=0;  
+for(var a=1; a<11; a=a+1){
+  su = su + 1;
+  if (a==6) { break; } 
+  document.write(su + '  ') ;
+}
+
+var num=7;  //궁금 짝수 홀수인지 처리
+ if(num%2==0){ 짝수 }
+ else{ 홀수 }
+
+hap=kor+eng ;    avg=hap/2;
+
+교재 340페이지  if~else제어문설명
+문제1] 평균이 70점부터 축합격, 0~69 재시험
+if(avg >= 70) { document.write('축합격'); }
+else { document.write('재시험'); }
+
+
+var grade='F';
+문제1] 평균90~100 A, 평균80~89 B, 평균70~79 C,
+      평균60~69  D, 평균0~59  F,
+if(avg >= 90) { grade='A'; }
+else if(avg >= 80) { grade='B'; }
+else if(avg >= 70) { grade='C'; }
+else if(avg >= 60) { grade='D'; }
+else { grade='F'; }
+
+function mynumber(){
+   var su=0;
+   var result='';
+   for(a=1; a<6; a++){
+       su = su +1;
+       result = result + su  + '  ';
+       document.getElementById('display').innerHTML = result ;
+  }
+}
+
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+   ㄴworkboot플젝이름
+     ㄴcss
+       ㄴstyle.css
+     ㄴimages
+     ㄴlogin.html
+     ㄴvideoe.html
+     ㄴjoin.html
+     ㄴpost_list.html
+        ㄴpost_detail.html
+     ㄴpost_form.html 글쓰기폼
+
+
+
+
+
+
+
+
+
+javascript + css 병행
+
+
+	9 + 4 = 13
+	9 - 4 = 5
+	9 * 4 = 36
+	9 / 4 = 2
+	9 % 4 = 1
+
+
+
+다시 cmd
+C:\Users\guro-hi> dir
+C:\Users\guro-hi> cd\
+C:\> cls  
+C:\> cd Mtest
+C:\Mtest> cd worksql
+C:\Mtest\worksql> cd LG
+C:\Mtest\worksql\LG> cls
+C:\Mtest\worksql\LG> dir
+C:\Mtest\worksql\LG> git init
+C:\Mtest\worksql\LG> git remote add  origin  여러분깃주소
+C:\Mtest\worksql\LG> git pull  origin master
+C:\Mtest\worksql\LG> git remote
+  origin출력
+C:\Mtest\worksql\LG> git branch
+  *master출력
+
+
+깃허브사이트에서 삭제및 수정한후 다시 땡겨옴=pull
+C:\Mtest\worksql\LG> git pull  origin master
+
+
+처음에 깃에 올릴때
+C:\Mtest\workhtml\test> git init
+C:\Mtest\workhtml\test> git add  *.* 
+C:\Mtest\workhtml\test> git commit -m "02-14-화요일cookie" 
+C:\Mtest\workhtml\test> git remote add  origin  깃주소
+C:\Mtest\workhtml\test> git remote 
+C:\Mtest\workhtml\test> git branch 
+C:\Mtest\workhtml\test> git push origin  master
+
+
+깃허브사이트에서 삭제및 수정한후 다시 땡겨옴=pull
+C:\Mtest\worksql\LG> git pull  origin master
+
+
+
+css교재진행
+javascript + css 병행
+
+
+#-----------------------------------------------------------
+태그시작 <ol>  종료태그</ol>
+
+자바스크립트
+ 대소문자구별이 있음 310페이지참고
+ 컴퓨터모든언어는 값을 일시적으로 기억하는 공간이름
+ 공간이름=변수=variable=변덕쟁이 
+  // 311페이지참고 주석설명 variable변수=저금통  eng= 89 ; 
+  var  eng = 89 ; 정답
+  eng = 89 ; 정답
+  let  eng = 89 ; 정답정수
+  pi = 3.1415; //실수
+  avg = 78.9 ; //실수
+  grade='B'  ; //하나글자=캐릭터character
+  city="구로구 신림동" ;  //문자열string
+  document.write('안내문' , pi ) ; 내용=<body>태그
+
+
+자바스크립트 dom돔모델=Bom모델 
+ ㄴwindow윈도우 = 본문+툴바+상태바+메뉴바+url주소+스크롤바
+ ㄴdocument문서 = 본문=body
+
+ 대소문자구별이 있음 eng=90 ; Eng사용할때에러
+ 명령어끝에 ; 세미콜론
+
+다시 cmd
+C:\Users\guro-hi> dir
+C:\Users\guro-hi> cd\
+C:\> cd Mtest
+C:\Mtest> cd worksql
+C:\Mtest\worksql> cd mvc
+C:\Mtest\workhtml\mvc> dir
+
+
+
+
+	블록태그 div,h숫자,ol,ul,p
+	인라인태그  img,a,span
+	그룹요소 1.9 div,span
+	폼태그 1.8
+	 <input type=button value=버튼>
+	 <button onclick="game()">버튼</button>
+	인스타일 100페이지
+	 <p  style=magin-left=20px>
+	 <div id=mydiv  class=mydiv_cla>
+	 <span  class=myspan id=mysapn_sp>
+134페이지 
+  #ffffff  ===>힌색  white
+  #000000  ===>검정  black
+  #ff0000  ===>레드  red
+  rgb(255,0,0) 레드red
+  rgba(255,0,0,0) a알파투명도
+  hsla a알파투명도
+
+2.4 문단(paragraph) p태그  엔터2번효과 <p><p><p>
+2.5 배경(background)
+
+
+
+
+
+
+
+
+
+#-----------------------------------------------------------------------
+피자화면 만들기  -  실습시간 
+
+https://startbootstrap.com/
+bootstrap 버튼 사용
+
+교재를 보고 진행
+다음주부터  javascript + css 병행
+
+
+	Server서비스제공(무료,유료)
+	  ㄴmvc2서블릿,spring,django,nodejs
+	Client사용입장(무료,유료)
+          ㄴclient프레임워크(vue,react,angular,svelte)
+          ㄴ자바스크립트기본으로 vue,react,anglar,svelte기술 
+
+자바스크립트패턴  ^시작   $끝
+
+
+윈도우시작  환경
+  시스템 환경 변수 편집 ===>클릭
+  고급탭(3) ===> 환경변수...
+  시스템변수  
+       path선택 편집... 클릭 
+          C:\Program Files\Git\cmd
+
+
+다시 cmd
+C:\Users\guro-hi> dir
+C:\Users\guro-hi> cd\
+C:\> cd Mtest
+C:\Mtest> cd workhtml
+C:\Mtest\workhtml> cd test
+C:\Mtest\workhtml\test> dir
+C:\Mtest\workhtml\test> git --version
+
+C:\Mtest\workhtml\test> git init
+  .git폴더 자동생성 
+
+C:\Mtest\workhtml\test> git  status
+C:\Mtest\workhtml\test> git add aaa.txt
+C:\Mtest\workhtml\test> git add index.html
+C:\Mtest\workhtml\test> git add bbb.gif
+C:\Mtest\workhtml\test> git  status
+C:\Mtest\workhtml\test> git commit -m  "2-8-목요일 2시" 
+
+C:\Mtest\workhtml\test> git config --global user.email  "메일주소"
+C:\Mtest\workhtml\test> git config --global user.name  "young"
+
+C:\Mtest\workhtml\test> git commit -m  "2-8-목요일 2:10" 
+C:\Mtest\workhtml\test> git remote 
+  처음에는 아무런 표시없음
+
+C:\Mtest\workhtml\test> git remote add  origin  https://github.com/posasi2000/snow.git
+C:\Mtest\workhtml\test> git remote 
+  origin출력
+
+C:\Mtest\workhtml\test> git branch 
+  * master
+
+C:\Mtest\workhtml\test> git push origin  master
+
+
+#-----------------------------------------------------------------------------
+C:\Mtest\workhtml\test> git add  *.*
+C:\Mtest\workhtml\test> git commit -m  "2-9-목요일 2:55" 
+C:\Mtest\workhtml\test> git push origin  master
+
+
+#------------------------------------------------------------------------------
+다시 cmd
+C:\Users\guro-hi> dir
+C:\Users\guro-hi> cd\
+C:\> cd Mtest
+C:\Mtest> cd workhtml
+C:\Mtest\workhtml> cd zoom
+C:\Mtest\workhtml\zoom> dir
+C:\Mtest\workhtml\zoom> git --version
+
+C:\Mtest\workhtml\zoom> git init
+  .git폴더 자동생성 
+
+C:\Mtest\workhtml\zoom> git add *.*
+C:\Mtest\workhtml\zoom> git commit -m  "2-9-목요일 3:19" 
+C:\Mtest\workhtml\zoom> git remote 
+  처음에는 아무런 표시없음
+
+C:\Mtest\workhtml\zoom> git remote add  origin  https://github.com/posasi2000/summer.git
+C:\Mtest\workhtml\zoom> git remote 
+  origin출력
+
+C:\Mtest\workhtml\zoom> git branch 
+  * master
+
+C:\Mtest\workhtml\zoom> git push origin  master
+
+C:\Users\guro-hi\Pictures\Saved Pictures
+
+
+#------------------------------------------------------------------------------
+<form action="구글검색/네이버검색" 메소드method="get/post">
+  입력란 메시 입력후 submit버튼을 누르면 
+</form>
+
+https://www.google.com/search?q=messi&oq=messi&
+https://search.naver.com/search.naver?where=nexearch
+
+
+github에 문서올리는 연습
+form태그 피자주문화면작성
+부트스트랩 https://startbootstrap.com/
+교재내용
+
+웹브라우저에서 검색할때 q=query=질의
+검색어 메시  ~~~?asdfa/q=메시~~ &  &
+검색어 메시  ~~~?asdfa/query=메시 & &
+ 제목항목 snow검색  ~~~.jsp?title=snow&page=3&wdate=20230208&
+ 제목항목 snow검색  ~~~.jsp?title=snowpage=3wdate=20230208google=
+ 검색 원하는항목 가격 제조사 
+  ~~~.jsp?item=패드&price=20&company=LG
+
+<form action="구글검색/네이버검색" 메소드method="get/post">
+</form>
+
+
+html태그에서 인용  "아이유"  <q>아이유</q>  <small></small>
+
+https://www.google.com/search?q=messi&oq=messi&aqs=chrome.0.0i67i355i433j46i67i433j0i433i512j0i512l7.4760j0j15&sourceid=chrome&ie=UTF-8
+https://www.google.com/search?q=messi&oq=~chrome&ie=UTF-8
+
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EB%A9%94%EC%8B%9C
+https://search.naver.com/search.naver?where=~&query=%EB%A9%94%EC%8B%9Ca메시
+https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=messi
+https://search.naver.com/search.naver?where=~~&ie=utf8&query=messi
+     
+웹브라우저에서 검색할때 q=query=질의
+
+html태그에서 인용  "아이유"  <q>아이유</q> 
+
+
+
+
+https://git-scm.com 
+https://github.com ==>가입하세요 저장고역할 
+
+…or create a new repository on the command line
+echo "# snow" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/posasi2000/snow.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/posasi2000/snow.git
+git branch -M main
+git push -u origin main
+
+	https://github.com/posasi2000/database
+	https://github.com/여러분/snow
+	https://github.com/Dahlia-sung
+
+
+
+#----------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------
+https://www.w3schools.com/css/css_form.asp/aspx  ===>닷넷c#
+https://www.shin~~/index.jsp
+https://www.fb~~/re.php
+
+
+https://www.~~~~/css/bc.himedia논리적인이름
+
+
+ 2월8일 수요일
+  ㄴ05testguest.html  <link rel="stylesheet" href="./css/guest.css">
+  ㄴ네이버가입화면
+     03testnaver.html(영임) 본인각자 배웠던 태그 작성
+     02testnaver.html분석
+     01testform.html화면 스타일 
+
+
+03testnaver.html(영임)   각자 네이버및 다른사이트 가입화면 작성 
+https://git-scm.com 접속후 64download~~~
+https://github.com/
+
+
+#------------------------------------------------------------------------
+  ㄴgit가입 소스 올리기
+  ㄴ자바스크립트 시작
+  ㄴ피자화면 50페이지 
+  ㄴ교재내용확인 
+
+	https://git-scm.com
+	https://github.com/
+	https://startbootstrap.com/
+	https://jquery.com
+   
+
+    상품정보  	   	          mypage
+     mycoffee.html                  위치지도=searchmap.html	
+     myproduct.html                 About=about.html
+
+
+
+ ppt문서 27페이지 ~ 57페이지
+ form태그 
+ ruby태그 윗첨자비슷 
+
+ https://www.w3schools.com/
+ git깃허브
+ 
+ 
+ index 갤러리  게시판 멀티미디어    상품정보       	          mypage
+                                mycoffee.html               위치지도=searchmap.html	
+		                myproduct.html              About=about.html
+
+#-----------------------------------------------------------------------------------
+  
+
+div태그, span태그
+  a태그
+  iframe태그
+  화면입력 form태그
+  부트스트랩 
+
+ <html>  
+  <head> 제목 style script </head>  
+  <body> 
+    보여주는 영역 
+    <iframe src=food.html알맹이> </iframe>
+    <a href=food.html알맹이> 요기요포장 </a> 
+  </body> 
+</html>
+ 
+  자바스크립트 안함 
+
+page27.html
+pageselect.html
+
+page28.html
+pagetextarea.html
+  
+	~~~.jsp문서는 자바java언어기반
+	~~~.asp문서는 MS사의 C# 닷넷
+	~~~.php문서는 리눅스기반 스크립트언어 기반
+	~~~.py문서는 파이썬기반 웹서버페이지 Django/Flask
+
+<form  action="#" method메소드="get기본입니다url선택항목정보가보임">  
+  입력란,체크,라이오,textarea,select
+</form>
+
+Web웹문서의 기본은  html태그 
+Web웹문서에서 스크립트=코드 (연산,배열,함수) 자바스크립트구현기술
+
+<script>
+ function mycheck(){
+    var dtitle = document.myform.title.value;
+    if (dtitle=="" || dtitle==null){
+         alert("제목이 공백입니다 ");
+    }
+ }
+</script>
+
+
+
+
+
+
+
+#-------------------------------------------------------------
+참고사이트
+https://developer.mozilla.org/ko/docs/Web/CSS/border-collapse
+
+더미텍스트문자 로렌이쉽
+https://www.lipsum.com/
+
+  a태그는 라인개행X  (라인개행x img font b )
+  a태그는 밑줄생성 (그래서 스타일 :hover속성 적용)
+  <anchor http+reference="사이트,문서,이름,메일"> 카카오 </a>
+  <a href="사이트,문서,이름,메일"> 카카오 </a>
+
+  <style> a{ u제거;컬러;글꼴}  a:hover{u;컬러;글꼴} </style>
+
+  <a href="www.daum.net"> 카카오 </a>
+  <a href="http://www.daum.net"  target="_blank"> 카카오 </a>
+  <a href="gallery.html"> gallery98%문서 </a>
+  <a href="mailto:abc@엘쥐.com"> 관리자메일 </a>
+  <a href="#top"> Top처음위치 </a>
+
+  뉴스,쇼핑에서 상단에서  <a name=top>  </a>
+
+  통신규약 protocol
+  ㄴ tcp/ip
+  ㄴ http  <a href="http://www.naver.com">네이버</a>
+  ㄴ ftp
+  ㄴ smtp/pop3
+  ㄴ DHCP
+  ㄴ udp
+
+  https://helloworld-88.tistory.com/146
+
+#----------------------------------------------------------------------------------------
+ 스타일에서 접근할때 
+  <style>
+    #island{ color:red; }     
+    .fruit{ font-weight:bold; }
+    ol#country{ }  
+    hr{color:gray; margin-left:5px;} 
+    #my_hr1{color:gray; margin-left:5px;} 
+    div{ color:blue; }
+    span{ margin-top:5px; }
+  </style> 
+
+<html>
+ <body>
+   <hr style="color:gray; margin-left:5px;"> </hr>
+   <hr id="my_hr1"> </hr>
+   <ol id="country"> </ol>
+   <div  id="island"> </div>
+   <div  class="fruit"> </div>
+   <span id="island"> </div>
+   <span class="fruit"> </div>
+   <hr id="my_hr1"> </hr>
+ </body>
+</html>
+
+
+  <style>
+    #island{ color:red; }     
+    .fruit{ font-weight:bold; }
+    ol#country{ }  
+    hr{color:gray; margin-left:5px;} 
+    #my_hr1{color:gray; margin-left:5px;} 
+    div{ color:blue; }
+    span{ margin-top:5px; }
+  </style> 
+
+Mtest
+ ㄴworkhtml
+   ㄴimages폴더 복붙
+   ㄴday0130  
+   ㄴday0131
+   ㄴday0201
+   ㄴday0202
+
+
+  스타일 id/class
+    
+
+  <ins> <u>
+  <del> <strike>
+
+ https://www.w3schools.com/
+ 
+ 스타일에서 접근할때 
+  <style>
+    #island{color:red;}
+  </style> 
+  <ul id="island">
+
+
+
+
+
+#--------------------------------------------------
+태그=tag
+ 자동엔터기능 <h1> </h1>  <br></br> <p></p>  <hr> <ol> <ul>
+ 엔터지원안됨 <img src>,  <font size=7>
+ 글꼴변화 <b>짙하게</b>  <u>밑줄</u> <i>이태릭체</i>
+
+순서있음  order List = ol     숫자번호 a/A/a/i/I
+순서없음  unorder List = ul  disc●  ○circle □square
+
+ 여의도 안면도 죽도   독도    울릉도  선유도  샤랑도 
+ 제주도 강화도 대부도  나로도  백령도  월미도  
+
+ 09testol.html
+ 10testul.html
+ 11testolul.html    ===>여러분관심 5개이상
+ 12testolul영임.html ===>여러분관심 5개이상
+ 13testolul.html    ===>12페이지작성
+ 14testdd.html
+  
+
+DL=definition List정의목록
+DT=definition Term정의용어
+DD=definition description정의설명
+
+  <ins> <u>
+  <del> <strike>
+
+   <ins> 아마존 cherry </ins> <p></p>
+   <del> 아마존 cherry </del> <p></p>
+   <strike>  아마존 cherry </strike> <p></p>
+   <u> 아마존 cherry </u>
+
+
+vscode 다운로드 입력
+https://code.visualstudio.com/download
+
+VScode설치후
+ ㄴFile메뉴 auto save체크 처음한번만설정
+ ㄴ5번째 확장아이콘 live server설치 처음한번만설치
+ ㄴFile메뉴 Open folder선택 작업폴더 day0130 
+
+웹브라우저
+ ㄴ통신규약 http
+   통신프로토콜 tcp/ip, ftp, smtp, udp
+ ㄴ웹브라우저 인식하는 언어 html = hyper text mark-up language
+ ㄴhtml태그규칙
+   ㄴ대소문자구별없음 < >태그=tag/ 쌍태그<h2>안내문 </h2>  홀태그<br><p>
+   ㄴ줄단위 문장마지막 세미콜론없음; 
+<html> 
+ <head> <title> </title> </head> 
+ <body>  
+   <h숫자>안내문 </h숫자> 
+   <img src='폴더/파일'>   
+ </body> 
+</html>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+#-----------------------------------------------------
+윈도우시작클릭후    cmd
+C:\Users\guro-hi> ipconfig
+   192.168.0.157
+   192.168.0.XXX
+C:\Users\guro-hi> cls
+C:\Users\guro-hi> dir
+C:\Users\guro-hi> cls
+C:\Users\guro-hi> cd \
+C:\> ipconfig
+C:\> exit
+
+
+윈도우시작클릭
+\\192.168.0.157
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
